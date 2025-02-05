@@ -1,7 +1,5 @@
 @import './base.css';
 
-/* src/assets/main.css */
-
 /* Styling khusus untuk komponen */
 .todo-container {
   background-color: var(--card-bg-color);
