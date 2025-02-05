@@ -27,14 +27,14 @@
   <style scoped>
   .todo-input {
     display: flex;
-    align-items: flex-start; /* Mengatur elemen sejajar ke atas */
+    align-items: flex-start;
     gap: 10px;
   }
   
   input {
     flex: 1;
     padding: 10px;
-    height: 40px; /* Pastikan tinggi input */
+    height: 40px;
     border: 1px solid var(--button-bg-color);
     border-radius: 5px;
     background-color: var(--card-bg-color);
@@ -44,8 +44,8 @@
   }
   
   button {
-    height: 40px; /* Tinggi tombol sama dengan input */
-    padding: 0 15px; /* Padding horizontal untuk tombol */
+    height: 40px;
+    padding: 0 15px;
     border: none;
     border-radius: 5px;
     background-color: var(--success-color);
@@ -53,9 +53,9 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
     font-size: 16px;
-    display: flex; /* Flexbox untuk menyelaraskan teks tombol */
-    align-items: center; /* Menyelaraskan teks tombol secara vertikal */
-    justify-content: center; /* Menyelaraskan teks tombol secara horizontal */
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   button:hover {
