@@ -33,11 +33,11 @@
     methods: {
       addTask(task) {
         this.tasks.push(task);
-        this.saveTasks(); // Simpan daftar tugas ke localStorage
+        this.saveTasks(); 
       },
       removeTask(task) {
         this.tasks = this.tasks.filter((t) => t !== task);
-        this.saveTasks(); // Simpan perubahan ke localStorage
+        this.saveTasks();
       },
       completeTask(task) {
         alert(`Task "${task}" completed!`);
@@ -47,17 +47,17 @@
         document.documentElement.classList.toggle('dark', this.isDark);
       },
       saveTasks() {
-        localStorage.setItem('tasks', JSON.stringify(this.tasks)); // Simpan ke localStorage
+        localStorage.setItem('tasks', JSON.stringify(this.tasks));
       },
       loadTasks() {
-        const savedTasks = localStorage.getItem('tasks'); // Ambil data dari localStorage
+        const savedTasks = localStorage.getItem('tasks');
         if (savedTasks) {
-          this.tasks = JSON.parse(savedTasks); // Parse data dan tetapkan ke tasks
+          this.tasks = JSON.parse(savedTasks);
         }
       },
     },
     mounted() {
-      this.loadTasks(); // Muat data dari localStorage saat komponen dipasang
+      this.loadTasks();
     },
   };
   </script>
