@@ -13,32 +13,32 @@ export default {
   },
   data() {
     return {
-      tasks: [], // Data todo list
+      tasks: [],
     };
   },
   methods: {
     loadTasks() {
       const savedTasks = localStorage.getItem("tasks");
       if (savedTasks) {
-        this.tasks = JSON.parse(savedTasks); // Muat data dari localStorage
+        this.tasks = JSON.parse(savedTasks);
       }
     },
     saveTasks() {
-      localStorage.setItem("tasks", JSON.stringify(this.tasks)); // Simpan data ke localStorage
+      localStorage.setItem("tasks", JSON.stringify(this.tasks));
     },
     updateTasks(newTasks) {
-      this.tasks = newTasks; // Perbarui daftar tugas
-      this.saveTasks(); // Simpan perubahan ke localStorage
+      this.tasks = newTasks;
+      this.saveTasks();
     },
   },
   mounted() {
-    this.loadTasks(); // Muat data saat aplikasi diluncurkan
+    this.loadTasks();
   },
 };
 </script>
 
 <style>
-/* CSS dasar untuk elemen root aplikasi */
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -53,7 +53,7 @@ export default {
 h1 {
   color: var(--text-color);
 }
-/* Mode gelap: set background */
+
 html.dark #app {
   background-color: #121212;
   color: white;
