@@ -1,4 +1,3 @@
-/* Base CSS untuk reset dan tema default */
 * {
   margin: 0;
   padding: 0;
@@ -22,7 +21,6 @@ body {
   padding: 20px;
 }
 
-/* Variabel default untuk tema */
 :root {
   --background-color: #ffffff;
   --text-color: #000000;
@@ -34,7 +32,6 @@ body {
   --success-color: #4caf50;
 }
 
-/* Tema dark */
 html.dark {
   --background-color: #121212;
   --text-color: #ffffff;
