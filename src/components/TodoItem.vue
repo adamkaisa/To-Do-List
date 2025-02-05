@@ -29,24 +29,21 @@
   </script>
   
   <style scoped>
-  /* Styling untuk tugas yang telah diselesaikan */
   .todo-item.completed .task-text span {
     text-decoration: line-through;
     color: gray;
   }
   
-  /* Mengatur tata letak elemen */
   .todo-item {
     display: flex;
-    align-items: flex-start; /* Menjaga agar tombol tetap di atas */
+    align-items: flex-start;
     justify-content: space-between;
     padding: 10px;
     border-radius: 8px;
     margin-top: 10px;
-    flex-wrap: wrap; /* Memungkinkan elemen turun ke baris berikutnya */
+    flex-wrap: wrap;
   }
   
-  /* Mengatur teks agar turun ke baris berikutnya jika terlalu panjang */
   .task-text {
     flex: 1;
     min-width: 60%;
@@ -56,14 +53,12 @@
     margin-bottom: 10px;
   }
   
-  /* Mengelompokkan tombol */
   .button-group {
     display: flex;
-    gap: 10px; /* Menambahkan jarak antar tombol */
+    gap: 10px;
     align-items: center;
   }
   
-  /* Styling tombol */
   button {
     padding: 8px 15px;
     border: none;
