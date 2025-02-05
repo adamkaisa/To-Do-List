@@ -20,9 +20,9 @@
   
   <style scoped>
   button {
-    position: absolute; /* Menetapkan posisi tombol */
-    top: 10px; /* Posisi dari atas */
-    right: 10px; /* Posisi dari kanan */
+    position: absolute;
+    top: 10px;
+    right: 10px;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
