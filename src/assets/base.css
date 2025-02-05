@@ -1,0 +1,45 @@
+/* Base CSS untuk reset dan tema default */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+body {
+  background-color: var(--background-color, #ffffff);
+  color: var(--text-color, #000000);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Variabel default untuk tema */
+:root {
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --card-bg-color: #f9f9f9;
+  --button-bg-color: #f1f1f1;
+  --button-text-color: #000000;
+  --button-hover-bg: #e0e0e0;
+  --danger-color: #ff4d4d;
+  --success-color: #4caf50;
+}
+
+/* Tema dark */
+html.dark {
+  --background-color: #121212;
+  --text-color: #ffffff;
+  --card-bg-color: #1e1e1e;
+  --button-bg-color: #2c2c2c;
+  --button-text-color: #ffffff;
+  --button-hover-bg: #333333;
+}
