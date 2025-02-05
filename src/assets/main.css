@@ -1,6 +1,5 @@
 @import './base.css';
 
-/* Styling khusus untuk komponen */
 .todo-container {
   background-color: var(--card-bg-color);
   color: var(--text-color);
